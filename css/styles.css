@@ -41,7 +41,7 @@ body {
 }
 
 .container {
-    width: 1160px;
+    width: 1158px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -85,6 +85,7 @@ body {
 .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 
@@ -174,6 +175,7 @@ body {
 }
 
 .main-title {
+    max-width: 496px;
     margin-bottom: 48px;
     font-weight: 700;
     font-size: 56px;
@@ -184,6 +186,7 @@ body {
 }
 
 .modal-btn {
+    min-width: 169px;
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
@@ -206,14 +209,24 @@ body {
 
 /* ========== BENEFITS ========== */
 
+.visually-hidden {
+    display: none;
+}
+
 .benefits-list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
+.benefits-list-item {
+    width: calc((100% - 72px) / 4);
+}
+/* 
 .benefits-list-item:not(:last-child) {
     margin-right: 24px;
-}
+} */
 
 .benefits-list-title {
     margin-bottom: 8px;
@@ -289,7 +302,7 @@ body {
 }
 
 .portfolio-list-item {
-    width: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3); 
     background: #fff;
 }
 
@@ -298,14 +311,13 @@ body {
     border-left: 1px solid  #e7e9fc;
     border-right: 1px solid  #e7e9fc;
     padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding-bottom: 32px 16px; 
     width: 360px;
     height: 120px;
 }
 
 .portfolio-list-services {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -332,6 +344,7 @@ body {
 }
 
 .logo-footer {
+    display: inline-block;
     margin-bottom: 16px;
 }
 
